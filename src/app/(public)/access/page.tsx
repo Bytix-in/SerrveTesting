@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Shield, Key, Users, Settings } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 
 export default function AccessPage() {
   const accessLevels = [

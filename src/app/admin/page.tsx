@@ -15,7 +15,7 @@ import {
   Loader2,
   LogOut
 } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import { getCurrentUserWithRole, signOut, type User } from '@/lib/auth'
 
 export default function AdminDashboard() {

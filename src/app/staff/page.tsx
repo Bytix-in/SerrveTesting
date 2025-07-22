@@ -11,7 +11,7 @@ import {
   Calendar,
   MessageSquare
 } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 
 export default function StaffDashboard() {
   const todayStats = [

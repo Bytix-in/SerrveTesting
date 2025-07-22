@@ -17,7 +17,7 @@ import {
   ShoppingBag,
   Phone
 } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import InvoicePDFDownload from '@/components/InvoicePDFDownload'
 import { supabase } from '@/lib/supabase'
 import type { User } from '@supabase/supabase-js'

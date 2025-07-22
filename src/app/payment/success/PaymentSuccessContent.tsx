@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { CheckCircle, Clock, IndianRupee, XCircle, Loader2, RefreshCw, FileText, User } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import InvoicePDFDownload from '@/components/InvoicePDFDownload'
 import { supabase } from '@/lib/supabase'
 

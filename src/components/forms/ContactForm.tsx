@@ -4,11 +4,21 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { motion } from 'framer-motion'
 import { Send, Loader2 } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
-import { Input } from '@/components/ui/Input'
-import { Label } from '@/components/ui/Label'
-import { contactSchema, type ContactInput } from '@/lib/validations'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { z } from 'zod'
 import { useState } from 'react'
+
+// Define the contact schema
+const contactSchema = z.object({
+  name: z.string().min(2, 'Name must be at least 2 characters'),
+  email: z.string().email('Invalid email address'),
+  subject: z.string().min(5, 'Subject must be at least 5 characters'),
+  message: z.string().min(10, 'Message must be at least 10 characters'),
+})
+
+type ContactInput = z.infer<typeof contactSchema>
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)

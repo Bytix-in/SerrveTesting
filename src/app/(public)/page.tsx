@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Rocket, ArrowRight, Zap, Globe, BarChart3, Mail } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 export default function HomePage() {

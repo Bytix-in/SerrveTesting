@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import { X, Mail, Shield, Loader2, CheckCircle, ArrowLeft, IndianRupee } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
-import { Input } from '@/components/ui/Input'
-import { Label } from '@/components/ui/Label'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 import { supabase } from '@/lib/supabase'
 import type { User } from '@supabase/supabase-js'
 
